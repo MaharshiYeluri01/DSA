@@ -1,6 +1,5 @@
 import random
 import pdb 
-from graph_utils import *
 from IPython.display import Image
 from collections import deque
 
@@ -45,4 +44,11 @@ def create_graph(edges,directed=False):
     for v1,v2 in edges:
         g.creteConnection(v1,v2)
         if not directed:g.creteConnection(v2,v1)
-    return g    
+    return g
+
+graphData=edges=[('a','b'),('a','c'),('a','e'),('a','d'),
+('b','e'),
+('c','g'),('c','d'),('c','e'),
+('d','f'),
+('e','f'),
+('f','g')]
